@@ -1,5 +1,10 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("fonts/GILROY-MEDIUM.TTF") format("woff2");
+}
+
 * {
-  font-family: Consolas;
+  font-family: "Gilroy";
 }
 
 header {
@@ -11,7 +16,10 @@ header {
 }
 
 header img {
-  height: 32px;
+  height: 28px;
+}
+.header-logo-image {
+  height: 50px;
 }
 
 header a {
@@ -84,7 +92,8 @@ header div {
 }
 
 footer {
-  background-color: #e4e4e4;
+  background-color: #f2f2f2;
+
   padding: 40px 20px;
   position: relative;
 }
@@ -344,4 +353,12 @@ footer .footer-section.contact-info p {
 
 .footer-quick-link {
   text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .footer-quick-link {
+    text-align: left;
+    margin-left: 100px;
+    /* background-color: aqua; */
+  }
 }
