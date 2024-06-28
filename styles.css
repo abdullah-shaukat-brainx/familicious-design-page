@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("fonts/GILROY-MEDIUM.TTF") format("woff2");
+  src: url("fonts/GILROY-REGULAR.TTF") format("woff2");
 }
 
 * {
@@ -322,6 +322,11 @@ footer .footer-section.contact-info p {
   color: black;
 }
 
+.email-link:hover {
+  cursor: inherit;
+  /* color: purple; */
+}
+
 .footer-bottom span {
   margin-top: 30px;
   bottom: 0px;
@@ -355,10 +360,25 @@ footer .footer-section.contact-info p {
   text-align: center;
 }
 
-@media (min-width: 1024px) {
+.contact-separator-empty-div {
+  display: none;
+}
+
+@media (min-width: 1280px) {
   .footer-quick-link {
     text-align: left;
     margin-left: 100px;
     /* background-color: aqua; */
+  }
+
+  .contact-separator-empty-div {
+    display: block;
+    border: #8b8888 solid 0.5px;
+    height: 30px;
+    margin-top: 19px;
+  }
+  .contact-info * {
+    font-size: small;
+    font-weight: bold;
   }
 }
